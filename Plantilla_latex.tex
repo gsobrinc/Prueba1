@@ -1,0 +1,95 @@
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+\usepackage{lipsum}
+\pagenumbering{arabic}
+
+
+\begin{document}
+	
+	
+	\title{Plantilla}
+	
+	\tableofcontents
+	
+	\thispagestyle{empty}
+	
+	
+	\listoffigures
+	
+	\listoftables
+	
+	
+	\chapter{}
+	
+	\section{El monasterio de San Lorenzo de El Escorial}
+	
+	\begin{figure}[h]
+		\includegraphics[width=\textwidth]{monasterio}
+		\caption{Figure}
+	\end{figure}
+		
+	\lipsum[12]\cite{Feireisl2016}
+	
+	\section{Ecuación de Euler}
+	
+	\lipsum[4]
+	
+	\begingroup
+	\Large 
+	\begin{equation}
+		  e^{i\pi}+1 = 12
+	\end{equation}	
+	\endgroup
+	
+	\vspace{1cm}
+	\lipsum[1]
+	
+	\begin{table}[htb]
+		\begin{center}
+			\begin{tabular}{|l|l|}
+				\hline
+				País & Ciudad \\
+				\hline \hline
+				España & Madrid \\ \hline
+				España & Sevilla \\ \hline
+				Francia & París \\ \hline
+			\end{tabular}
+			\caption{Tabla sencilla}
+			\label{tabla:sencilla}
+		\end{center}
+	\end{table}
+
+
+
+
+	\begin{table}[htb]
+		\begin{center}
+			\begin{tabular}{|p{3cm}||p{3cm}|p{3cm}|p{3cm}| }
+				\hline
+				\multicolumn{4}{|c|}{Country List} \\
+				\hline
+				Country Name     or Area Name& ISO ALPHA 2 Code &ISO ALPHA 3 Code&ISO numeric Code\\
+				\hline
+				Afghanistan   & AF    &AFG&   004\\
+				Aland Islands&   AX  & ALA   &248\\
+				Albania &AL & ALB&  008\\
+				Algeria    &DZ & DZA&  012\\
+				American Samoa&   AS  & ASM&016\\
+				Andorra& AD  & AND   &020\\
+				Angola& AO  & AGO&024\\
+				\hline	
+			\end{tabular}
+			\caption{Tabla genérica}
+			\label{tabla:gen}
+		\end{center}
+	\end{table}
+		
+
+	
+	
+	\bibliographystyle{ieeetr}
+	\bibliography{Bibliografia0}
+\end{document}
